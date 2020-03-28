@@ -5,6 +5,9 @@ pipeline {
     }
 
   }
+  environment {
+   HOME = '/tmp'
+  } 
   stages {
     stage('Build App') {
       steps {
